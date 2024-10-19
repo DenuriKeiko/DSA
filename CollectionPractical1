@@ -1,0 +1,22 @@
+import java.util.Collection;
+import java.util.LinkedList;
+
+public class CollectionPractical1 {
+    public static void main(String[] args) {
+        Collection<Integer> collection = new LinkedList<>();
+        
+  
+        collection.add(10);
+        collection.add(20);
+        collection.add(30);
+        collection.add(40);
+        collection.add(50);
+
+        System.out.println("Is collection empty? " + collection.isEmpty());
+        System.out.println("Size of collection: " + collection.size());
+        System.out.println("Does collection contain 30? " + collection.contains(30));
+        collection.remove(40);
+        System.out.println("Updated collection: " + collection);
+    }
+}
+
